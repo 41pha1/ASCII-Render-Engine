@@ -65,9 +65,9 @@ float sdBox(Vector pos)
 
 float sd(Vector pos)
 {
-	pos = pos.rotateX(iTime);
-	pos = pos.rotateZ(iTime*0.734);
-	pos = pos.rotateY(iTime*0.456);
+	pos = pos.rotateX(iTime*0.6);
+	pos = pos.rotateZ(iTime*0.3);
+	pos = pos.rotateY(iTime*0.1);
 	float qx = sqrt(pos.x*pos.x+pos.z*pos.z) - 0.5;
 	float sd = sqrt(qx*qx+pos.y*pos.y)-0.15;
 	return sd;
